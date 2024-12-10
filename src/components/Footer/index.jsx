@@ -1,8 +1,13 @@
 import React from 'react'
+import './index.scss'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+      <footer className="footer">
+      <p>&copy; {new Date().getFullYear()} Finexo. All Rights Reserved.</p>
+    </footer>
+    </div>
   )
 }
 

@@ -1,0 +1,19 @@
+.dashboard-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg, #231a6f, #0f054c);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .dashboard-container p {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Home.scss';  // Correct path to the SCSS file
-import backgroundImage from '../components/assets/images/slider-img.png';  // Correct image path
+import './Home.scss';  
+import backgroundImage from '../components/assets/images/slider-img.png'; 
 import Services from './Services';
 import About from './About'
-import WhyUs from './WhyUs';  // Adjust the path as needed
+import WhyUs from './WhyUs'; 
 import Team from './Team';
 
 function Home() {

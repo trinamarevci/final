@@ -1,8 +1,7 @@
-
-  
 .team-container {
     text-align: center;
     padding: 20px;
+    height: 83vh;
     background: linear-gradient(130deg, #231a6f, #0f054c);
 }
   
@@ -10,6 +9,7 @@
     font-size: 2rem;
     margin-bottom: 20px;
     color: #ffff;
+    margin-top: 50px;
   }
   
   .tt{
@@ -79,27 +79,7 @@
     font-size: 1.2rem;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  
-  .icon:hover {
-    background: aqua;
-    color: white;
-  }
+ 
   
   
-  
-  .facebook::before {
-    content: "F";
-  }
-  
-  .twitter::before {
-    content: "T";
-  }
-  
-  .instagram::before {
-    content: "I";
-  }
-  
-  .youtube::before {
-    content: "Y";
-  }
   
