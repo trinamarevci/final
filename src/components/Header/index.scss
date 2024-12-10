@@ -1,0 +1,94 @@
+/* index.scss */
+
+/* Basic navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(130deg, #231a6f, #0f054c);
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  color: #00c1d4;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative; /* Ensure it is positioned correctly */
+  z-index: 10; /* Higher z-index to appear on top */
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: linear-gradient(130deg, #231a6f, #0f054c);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;  /* Initially hidden */
+    opacity: 0;
+    transform: translateY(-20px); /* Starts slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and position */
+    z-index: 5; /* Lower z-index to appear below the hamburger menu */
+  }
+
+  .menu.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Slide into place */
+  }
+
+  /* Show the hamburger menu on small screens */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Hamburger animation when menu is open */
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -7px;
+  }
+}
