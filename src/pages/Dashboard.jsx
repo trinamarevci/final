@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../Context/AuthContext';  // Correct path
+import { useAuth } from '../Context/AuthContext'; 
 import './Dashboard.scss';
 
 const Dashboard = () => {

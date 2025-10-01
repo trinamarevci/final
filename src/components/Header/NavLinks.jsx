@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './index.scss';  // Make sure to update the path of the SCSS file if needed
+import './index.scss';
 
 const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,14 +13,12 @@ const NavLinks = () => {
     <div className="navbar">
       <img src="/logo192.png" alt="Logo" height="40" />
       
-      {/* Hamburger Icon for small screens */}
       <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuToggle}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-      {/* Menu links */}
       <div className={`menu ${isMenuOpen ? 'active' : ''}`}>
         <NavLink to="/home" onClick={() => setIsMenuOpen(false)}>Home</NavLink>
         <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About</NavLink>

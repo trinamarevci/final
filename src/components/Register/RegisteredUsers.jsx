@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './registeredUsers.scss';
-import NavLinks from '../Header/NavLinks';
 
 const RegisteredUsers = () => {
     const [users, setUsers] = useState([]);

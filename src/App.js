@@ -16,7 +16,7 @@ import Error from './pages/Error';
 
 const AppRoutes = () => {
   const location = useLocation();
-
+ 
   const isAuthPage = location.pathname === '/' || location.pathname === '/register';
 
   return (
